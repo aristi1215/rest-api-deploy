@@ -1,0 +1,42 @@
+
+### Recuperar todas las peliculas 
+GET http://localhost:1234/movies
+
+### Recuperar peliculas por id
+
+GET http://localhost:1234/movies/tt0480249
+
+### Pagination
+
+GET http://localhost:1234/movies/pagination/2
+
+### Recuperar peliculas por genero
+
+GEt http://localhost:1234/movies?genre=ACTION
+
+
+### Crear una pelicula
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+   "Title": "tonto",
+   "Year": 2001,
+    "Genre": "Action, Adventure, Fantasy",
+    "Director": "James Cameron",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
+    "hola": 123
+  }
+
+### Actualizar una pelicula
+PATCH http://localhost:1234/movies/tt0499549
+Content-Type: application/json
+
+{
+  "Year": 2000
+}
+
+
+##delete a movie
+
+DELETE http://localhost:1234/movies/tt0499549

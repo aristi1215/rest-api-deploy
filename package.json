@@ -1,0 +1,34 @@
+{
+  "devDependencies": {
+    "@types/node": "22.7.5",
+    "nodemon": "3.1.7",
+    "standard": "17.1.2"
+  },
+  "name": "js",
+  "version": "1.0.0",
+  "description": "Curso node js 01",
+  "main": "index.js",
+  "dependencies": {
+    "express": "4.21.1",
+    "picocolors": "1.1.0",
+    "undici-types": "6.19.8",
+    "zod": "3.23.8"
+  },
+  "scripts": {
+    "dev:3": "nodemon express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aristi1215/node-js.git"
+  },
+  "keywords": [
+    "curso",
+    "nodejs"
+  ],
+  "author": "Juan pablo aristizabal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aristi1215/node-js/issues"
+  },
+  "homepage": "https://github.com/aristi1215/node-js#readme"
+}
