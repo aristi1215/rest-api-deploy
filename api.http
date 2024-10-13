@@ -8,7 +8,7 @@ GET http://localhost:1234/movies/tt0480249
 
 ### Pagination
 
-GET http://localhost:1234/movies/pagination/2
+GET http://localhost:1234/movies/pagination/1
 
 ### Recuperar peliculas por genero
 
@@ -20,7 +20,7 @@ POST http://localhost:1234/movies
 Content-Type: application/json
 
 {
-   "Title": "tonto",
+   "Title": "tontosadasd",
    "Year": 2001,
     "Genre": "Action, Adventure, Fantasy",
     "Director": "James Cameron",
@@ -33,10 +33,11 @@ PATCH http://localhost:1234/movies/tt0499549
 Content-Type: application/json
 
 {
-  "Year": 2000
+  "Year": 2000,
+  "Title": "hola"
 }
 
 
-##delete a movie
+### Delete a movie
 
 DELETE http://localhost:1234/movies/tt0499549

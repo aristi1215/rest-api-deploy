@@ -15,7 +15,7 @@
     "zod": "3.23.8"
   },
   "scripts": {
-    "dev:3": "nodemon express.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",

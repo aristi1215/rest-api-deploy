@@ -1,7 +1,7 @@
 const express = require('express')
-const movies = require('../movies.json')
+const movies = require('./movies.json')
 const crypto = require('node:crypto')
-const { validateMovie, validatePartialMovies } = require('../schemas/movies.js')
+const { validateMovie, validatePartialMovies } = require('./schemas/movies')
 
 const app = express()
 
@@ -96,7 +96,7 @@ app.patch('/movies/:id', (req, res) => {
 
     movies[movieIndex] = updateMovie
 
-    res.status(200).json(updateMovie)
+    return res.status(200).json(updateMovie)
 
 })
 
